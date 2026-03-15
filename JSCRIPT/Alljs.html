@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSCRIPT Index</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #949898;
+            color: #000000;
+            min-height: 100vh;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .grid .container {
+            flex: 0 0 23%;
+            /* roughly four items per row with some margin */
+        }
+        .container {
+            border: 1px solid #555;
+            background-color: #ffffff;
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height:100px;
+            width: 250px;
+            box-sizing: border-box;
+            border-radius:50px ;
+            text-align: center;
+        }
+        button {
+            padding: 5px 10px;
+            cursor: pointer;
+            background-color: #eaff00;
+            color: #080808;
+            border: none;
+        }
+        button:hover {
+            background-color: #444;
+        }
+        h1 {
+            margin-bottom: 0.5em;
+        }
+        p {
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>JSCRIPT Directory</h1>
+    <p>Click a button to open the corresponding file:</p>
+
+    <div class="grid">
+        <div class="container">
+            <span>task.html</span>
+            <button type="button" onclick="window.location.href='task.html'">View</button>
+        </div>
+        <div class="container">
+            <span>myproject.html</span>
+            <button type="button" onclick="window.location.href='myproject.html'">View</button>
+        </div>
+        <div class="container">
+            <span>javascriptObject.html</span>
+            <button type="button" onclick="window.location.href='javascriptObject.html'">View</button>
+        </div>
+        <div class="container">
+            <span>indexcss.html</span>
+            <button type="button" onclick="window.location.href='indexcss.html'">View</button>
+        </div>
+        <div class="container">
+            <span>console.html</span>
+            <button type="button" onclick="window.location.href='console.html'">View</button>
+        </div>
+        <div class="container">
+            <span>calcul.html</span>
+            <button type="button" onclick="window.location.href='calcul.html'">View</button>
+        </div>
+        <div class="container">
+            <span>boot.html</span>
+            <button type="button" onclick="window.location.href='boot.html'">View</button>
+        </div>
+        <div class="container">
+            <span>Arrays.html</span>
+            <button type="button" onclick="window.location.href='Arrays.html'">View</button>
+        </div>
+        <div class="container">
+            <span>animation.html</span>
+            <button type="button" onclick="window.location.href='animation.html'">View</button>
+        </div>
+        <div class="container">
+            <span>Age.html</span>
+            <button type="button" onclick="window.location.href='Age.html'">View</button>
+        </div>
+        <div class="container">
+            <span>additionoftwo.html</span>
+            <button type="button" onclick="window.location.href='additionoftwo.html'">View</button>
+        </div>
+        <div class="container">
+            <span>add element dynamically.html</span>
+            <button type="button" onclick="window.location.href='add%20element%20dynamically.html'">View</button>
+        </div>
+    </div>
+</body>
+</html>

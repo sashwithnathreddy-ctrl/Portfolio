@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            text-align: center;
+            font-family: Arial ;
+            height: 100vh;
+            font-size: 35px;
+            height: 100vh;
+        }
+        label{
+            font-size: 80px;
+            color: red;
+            padding: 10px; 
+            margin: 5px;
+        }
+        button{
+            font-size: 20px;
+            padding: 10px;      
+            margin: 10px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-weight:bold;
+            color:black;
+            background-color:aqua;
+            transition:all 0.3s ease;
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color: #f6ffa5;
+            transform: scale(1.1);
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+     
+    <h1> COUNTER </h1>
+    <label id="number">0</label>
+    <div>
+    <button id="raise">Raise</button>
+    <button id="clear">Clear</button>
+    <button id="down">Down</button>
+    </div>
+    <p id="message"></p>
+    <script>
+        const labelValue = document.getElementById("number");
+        const raiseBtn = document.getElementById("raise");
+        const clearBtn = document.getElementById("clear");
+        const downBtn = document.getElementById("down");
+        const message  = document.getElementById("message");
+        let count=0;
+        raiseBtn.onclick = function(){
+            count++;
+            labelValue.textContent = count;
+            message.textContent = "Counter is raised";
+        }
+         clearBtn.onclick = function(){
+            count=0;
+            labelValue.textContent = count
+        }
+        downBtn.onclick = function(){
+            count--;
+            labelValue.textContent = count;
+        }
+         
+
+    </script>
+</body>
+</html>
